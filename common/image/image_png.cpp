@@ -169,7 +169,6 @@ bool ReadPNG(Image &image, const char *filepath)
     if (!fp)
     {
         PAT_DEBUG_LOG("PNG READ (Failed to open file %s to read)\n", filepath);
-        fclose(fp);
         return false;
     }
 
